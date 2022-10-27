@@ -1,0 +1,19 @@
+﻿@model Create
+
+<h2>@Model.Fname's dashboard</h2>
+
+<h4>Account Details</h4>
+<table>
+	<tr>
+		<td>Name: </td>
+		<td>@Model.Fname @Model.Lname</td>
+	</tr>
+	<tr>
+		<td>email: </td>
+		<td>@Model.Email</td>
+	</tr>
+	<tr>
+		<td>Fav Color:</td>
+		<td><canvas id="Fav" width="20" height="20" style="background-color: @Model.Color;"></canvas></td>
+	</tr>
+</table>
