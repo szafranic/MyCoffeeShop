@@ -6,6 +6,7 @@ namespace MyCoffeeShop.Controllers
 {
 	public class HomeController : Controller
 	{
+		
 		private readonly ILogger<HomeController> _logger;
 
 		public HomeController(ILogger<HomeController> logger)
@@ -15,6 +16,7 @@ namespace MyCoffeeShop.Controllers
 
 		public IActionResult Index()
 		{
+			
 			return View();
 		}
 

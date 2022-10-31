@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Products"] = "Home Page";
+}
+@model IEnumerable<Product>
+
+<div class="text-center">
+    <h2 class="display-4">Hungry?</h2>
+    <div>
+        @foreach(Product p in Model){
+            <div>
+                <p>
+                    <a asp-controller="Product" asp-action="Detail" asp-route-type="@p.Id">@p.Product1</a>
+                </p>
+                <p>@p.Price</p>
+            </div>
+        }
+    </div>
+    <div>
+            <div>
+                <p>
+                <a asp-controller="Product" asp-action="List" asp-route-type="Baked Goods">Baked Goods</a>
+                </p>
+                <p>
+                <a asp-controller="Product" asp-action="List" asp-route-type="Coffee">Coffee</a>
+                </p>
+            </div>
+    </div>
+</div>

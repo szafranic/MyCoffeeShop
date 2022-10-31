@@ -1,8 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model IEnumerable<Product>
 
 <div class="text-center">
-    <h1 class="display-4">Do you love coffee?</h1>
+    <h2 class="display-4">Do you love coffee?</h2>
     <p>Then how about you <a asp-controller="Home" asp-action="Create">sign up</a> for an account with us??</p>
+    <h3>You hungry?</h3>
+    <p>Come look at our <a asp-controller="Product" asp-action="Index">menu!</a></p>
 </div>
